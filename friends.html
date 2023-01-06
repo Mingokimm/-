@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Kokoa Clone</title>
+</head>
+
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>No service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fa-solid fa-battery-full fa-lg"></i>
+                <i class="fa-sharp fa-solid fa-bolt"></i>
+            </div>
+        </div>
+        
+        <header class="screen-header">
+            <h1 class="screen-header__titie">Friends</h1>
+            <div class="screen-header__icons">
+                <span>
+                    <i class="fas fa-search fa-lg"></i>
+                </span>
+                <span>
+                    <i class="fas fa-music fa-lg"></i>
+                </span>
+                <span>
+                    <i class="fas fa-cog fa-lg"></i>
+                </span>
+
+            </div>
+        </header>
+
+        <a id="friends-display-link">
+           <i class="fas fa-info-circle"></i> Friends's Name Display<i class="fas fa-chevron-right fa-sm"></i>
+        </a>
+         
+        <main class="friends-screen">
+            <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://s.pstatic.net/static/www/mobile/edit/20221229/cropImg_728x360_114237468433848267.jpeg" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">이동섭</h4>
+                    <!--<h6 class="user-component__subtitle"></h6>-->
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+                          <div class="friends-screen__channel">
+                            <div class="friends-screen__channel-header">
+                                <span>Channel</span>
+                                <i class="fas fa-chevron-up fa-sm"></i>
+                                </div>
+                                <div class="user-component">  
+                                    <div class="user-component__column">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIUAXgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAwQFBgcAAQj/xAA7EAACAQMCAwUEBgkFAAAAAAABAgMABBEFIQYSMRMiQVFhB3GBoSMyQlKR8BQzcoKSorHB4RUkYnPR/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEEAgMF/8QAIxEAAwACAgEDBQAAAAAAAAAAAAECAxEhMRIyUXETIiMzQf/aAAwDAQACEQMRAD8AvapSqrRKtKBa6nEFVpQLmvVWlAtAwOSvQuaUA2r0LQAAWu5fSlANq7BoASK0BHpS5FAwpDGxHgRSTLvt/WnBWkyPSgBQLSgWvQtKAUzJ4FogKICjAoGCFrpeWCLtZ2EcYwC7nlA+Jp4Db2ds11eSxxRqOZpJGCqo9SaoXEfEfDUl8JV4ozz99VMLzwqMEZBXGOvma51TXRpT7l1aNl6qfwoSKjOETbNYNLY66uq27ABQhHLHjbAHUe41JySKsgH3vlWk99g0ARSbCnDDFIsKYhFhSfxxS7CkjkHY4oAXUUYGa8UUYFBk9AowK8Ao0G4oGZF7SNSuuJuM7fh22uWhsYGKPg7EhQWb1O+B5YPnVil4Y4fGjpBcQQxxxIFEr7Nj31mVzqotfaRd3bEcv6bMu/QbsufxrUNDjfXbGWW5aaPkJaGRkCnb7QAJ232zUuR8leJLRmuu6XqXBOoR6noF3cx2znAfH1f+LDoR7xWpcB8TrxZpyXE6pFeRHlnRTtnwYDyPy3FKR6Tptnps1ttc9tntTP32c+pNVPhWez4W4iFk80XJeExJEG78W3MrEeRxy+/HrTi+dCyY12aq1JPQ29zHMmEcFh1FE1UkwmwoMb7n5UoRQN6UALgUYoRRCgyEKJaEUM0giTJwWPQUm0ltmpTb0fMPGMEtnxlqUEJLzJfSOnKMkkvzDbx61qSa7dXXDkDXOm3tnM0e8PIUY74JwRnl6GpDW77TuH3ubkRusk3NMxgjCGQ+PeO+5z4iss1/2gavfyBLBVsLQOG7NO80mD9snr+d6m9fRXP4+zTNDurrUH3jSG0gi5UjK9879TucDr4knPh0qh+0dZbXiaz1CI8pMeAw+8hz/erNw5xHcahpyv2MMZkA53QHJNFxPow4gtIbSF1S5DhonYEgHG+cDYYzvXGb1aR2ySqnaLfwhdi/tY7tDtLEGHpnwqxZ9flWaeyS4u7JLnSNTt57W4jHaRxzxlSVJwSM9RnxG1aV13q9dHnPg8OaTalDQGmA5FEKEUQNIyGCBu3QbmqprutGNZpOR2SNDI5T7KjqT5AVY7+Ts7GZs78uKoPEd3DY6TqXaDvXFk0K79Msn+TU+V7pSUYuJbKFxTxrBqsclpbW+Ffbtmbpj09/nVFZnGcD6ozvWr6HaaJxTw9b2F+mJrAGONu15SMnOQcbA77HI2r2H2aabaarbTTavzWauGa3lUF3A3xzA4x08POiXM8GqmnyXvh3g+wl4fsVngKyCGMkbgkgDPQjxq1adothpwLW9ugkbqxGT881FPxNZWirFblXVRgAVMQalDcWS3MYdlPVVUswPlgVqXFPgy/JLkO6tILp0kniVnjzyPjdfcaZFAyl4/1QOAT4+ZHp60re3Jmjiht+YPPgklSCi+JI8Pjj3717J2cQbJ2RQqqTk/5rsjnoak0DV4rbV4TTMjoUQoBXoNIyN9WP+zx5sKyL2szPFDAifUZyrfn4VrmqEC1BPg1ZD7VGWWwRvETDFTX+wpj0Gfw3s9she3meJ9t1YjatL0LUIW0G1udQeS4Ih7SQA7thZJCMD0WNdvvVl9vEHAZ88hbBIH58M1feHUf/AE61V1IXuK+dsLm3Un+HmPwNUY5lv7kc3TS4J5ri3DdjDbPzB+z51kxluZIskY6cwlb3LU/Bey2OnSOlxJEixM/NGCebCMAcDOeoOMHpVRVZZoVBJjndAM9eV2Xlz8HuHP7lWbT7hbixhlhARQowgPRfsg+vKRtWM8qGrlG8T8tyyU4Y1RuIr2S7tpC1qVLK/LyMo5iAoyMj6pB/ZFWKaMRAYySOg8B6++qTpFlPZa1dXEMrpBLGgjEbFQgGcjb1P4Yqa/1u6jmENwqzwn7X1WX+x/rS+tNMHjaWx1Z3fbM6HZl+dOs1BWEhS4DedTea6o4joGiBpENRhqZkR1XB0+UkE4Gdqxf2gu1xbRwxqWZpB0GcVuAORggEeRplPp2lx2zwvYwGJjzP3Rt6/n5VzrF5WqOs5PGdGQ8PcJqdNQalG0aq5aTONxgcw8sgEt8D8JprPs/o51UBiFlUnoDyq/4D9I/Crxc6Bp1wqLZTNGzMxMMhJX9Wyt8m9fDzqDvOHr+aOXtIo7ntCyO6S4YBsqxwceEsx/Cqk4XBze2V1kZlBuAV58dqQehbAf5zyn930p7pF59M0DoEdl52wernd/5iR6AClJrC8ftP0qxnXnyzqELfW5iw2/7n/gHmKDTtNn/SWluRyuFJDdMsfHzrlmSuWkbivF7Jq3uCndYj0NeM3PKzeG1RDz5l5Nw2cEeRqXgiKRKD1O5qHCt18FOatT8i8W2DU1G3NGpz4VDqNqk7c/QrViJB0Gog1Ng1GGpiHcZycnoN6a3F4rZXvo3Nsw6ZxkDPkRnr6eRoLq4EUA72CzKufeQM/AkH4VCyai3KJM8rEcwVvML2gAb05ZV388V2ieNmWHfiWdlSOWOVHYAM6g9WVQcjHhMh/dz4VHx3t1CqrDLLG0uCqo2FDONtjn7VxH/ABQ3t1PEZAi8pQOFPuWcL80i/CkLi+hieSTkyInaRcDwRpHHytUrrpa5GmOH1m8nIdJJFRirDuoe6zxkb4+7IBSGlvIbmR7hy0zDBJHkeg9K9jZLclCrDssIo5evIw9PK2/mpOwykkStvyIq58zyAn5nPxrnUr+AyVSztnnM7QqZT1Y/+dKcECk4GpWp9Ie2zsbU/gP0K0wJ8qew92MA0ID0GiBrq6mAz1bPZpv5H+dagQ3aK4HdGFBHUfVuRXV1Vx0jB0jHtSoJALAkeG7xg7dPtGmMn0lseZUPPEc5Xziby/bNdXUM0jpyT25Cou0p6H7tyfP1p8drwDA/Wyjb9rH9BXV1J9ASMB7xFLZrq6pBnZ3Hvp8p7orq6gD//2Q==" class="user-component__avatar user-component__avatar--sm"/>
+                                        <div class="user-component__text">
+                                            <h4 class="user-component__title user-component__title--not-bold">안유진</h4>
+                                            </div>
+                                            </div>
+                                            <div class="user-component__column">
+                                           <div>
+                                            <span>2</span>
+                                            <i class="fas fa-chevron-right fa-sm"></i>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                    
+        </main>
+
+              
+           
+    
+
+        </div>
+      </div>
+
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn">
+                    <a class="nav__link" href="friends.html">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="chats.html">
+                        <span class="nav_notification badge">1</span>
+                        <i class="fa-regular fa-comment fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="find.html">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="more.html">
+                        <span class="nav_notification"></span>
+                        <i class="fa-solid fa-ellipsis fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="https://kit.fontawesome.com/a2b5be4710.js" crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
